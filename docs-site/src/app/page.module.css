@@ -1,0 +1,163 @@
+.pageWrapper {
+  display: flex;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  color: white;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  width: 100%;
+  background: #111111;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.siteTitle {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: #E5E7EB;
+}
+
+.funText {
+  color: #D1D5DB;
+}
+
+.siteSubtitle {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  color: #cccccc;
+  font-weight: 600;
+}
+
+.docsContainer {
+  background: transparent;
+  border: none;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease-out;
+}
+
+.docsContainer.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer {
+  margin-top: 6rem;
+  padding-top: 3rem;
+  border-top: 1px solid #2a2a2e;
+  text-align: left;
+  background: transparent;
+}
+
+.footer p {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0 auto 1rem auto;
+  max-width: 700px;
+}
+
+.disclaimer {
+  font-size: 0.875rem;
+  color: #4a4a52;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.educationalNote {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin-top: 2rem;
+}
+
+.hamburgerButton {
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 1001;
+  background: #1e1e20;
+  border: 1px solid #2a2a2e;
+  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburgerIcon {
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.hamburgerIcon::before,
+.hamburgerIcon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: white;
+  left: 0;
+}
+
+.hamburgerIcon::before {
+  top: -6px;
+}
+
+.hamburgerIcon::after {
+  bottom: -6px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 4rem 2rem;
+  }
+
+  .hamburgerButton,
+  .overlay {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .docsContainer {
+    padding: 2rem;
+  }
+  
+  .header {
+    margin-bottom: 3rem;
+  }
+} 
