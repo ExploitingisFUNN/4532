@@ -99,7 +99,7 @@ export default function Home() {
                 <span className={styles.codeOperator}>(</span>
               </div>
               <div className={styles.codeLine}>
-                <span className={styles.codeString}>"https://api.exploitingis.fun/loader"</span>
+                <span className={styles.codeString}>"https://cdn.exploitingis.fun/loader"</span>
               </div>
               <div className={styles.codeLine}>
                 <span className={styles.codeOperator}>))()</span>
