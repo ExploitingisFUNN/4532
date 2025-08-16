@@ -40,5 +40,11 @@
     "name": "Build a Plane",
     "image": "/assets/buildaplane.jpg",
     "status": "operational"
+  },
+  {
+    "id": "doors",
+    "name": "Doors",
+    "image": "/assets/Doors.jpg",
+    "status": "operational"
   }
 ] 

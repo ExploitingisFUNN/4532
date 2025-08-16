@@ -39,25 +39,45 @@ export default function Home() {
   }, [])
 
   const generateGameCard = (game: Game) => (
-    <div className={styles.gameCard} key={game.id}>
+    <article className={styles.gameCard} key={game.id} role="article" aria-labelledby={`game-title-${game.id}`}>
       <div className={styles.gameIcon}>
-        <img src={game.image} alt={game.name} />
+        <img 
+          src={game.image} 
+          alt={`${game.name} game thumbnail`}
+          loading="lazy"
+          decoding="async"
+        />
         <div className={styles.gameInfoOverlay}>
-          <span className={styles.gameTitle}>{game.name}</span>
-          <span className={styles.gameStatusOperational}>
-            <span className={styles.statusDot}></span>
+          <h3 className={styles.gameTitle} id={`game-title-${game.id}`}>{game.name}</h3>
+          <span 
+            className={styles.gameStatusOperational}
+            role="status"
+            aria-label={`Game status: ${game.status}`}
+          >
+            <span className={styles.statusDot} aria-hidden="true"></span>
             {game.status.charAt(0).toUpperCase() + game.status.slice(1)}
           </span>
         </div>
       </div>
-    </div>
+    </article>
   )
 
   const gameCards = games.map(generateGameCard)
 
   return (
-    <main className={styles.main}>
-      {/* Hero Section */}
+    <>
+      <nav className={styles.nav}>
+        <div className={styles.navContainer}>
+          <div className={styles.logo}>exploitingis.FUN</div>
+          <div className={styles.navLinks}>
+            <a href="/keysystem" className={styles.navLink}>Key System</a>
+            <a href="https://discord.gg/ARzg6Mqcxa" target="_blank" rel="noopener noreferrer" className={styles.navLink}>Discord</a>
+          </div>
+        </div>
+      </nav>
+    
+      <main className={styles.main}>
+
       <section className={`${styles.hero} ${isLoaded ? styles.loaded : ''}`}>
         <div className={styles.heroContent}>
           <h1 className={styles.title}>
@@ -71,18 +91,27 @@ export default function Home() {
           </p>
           
           <div className={styles.buttonGroup}>
-            <a href="https://discord.gg/ARzg6Mqcxa" target="_blank" rel="noopener noreferrer" className={styles.primaryButton}>
+            <a 
+              href="https://discord.gg/ARzg6Mqcxa" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={styles.primaryButton}
+              aria-label="Join the exploitingis.FUN Discord server"
+            >
               Join the Discord
             </a>
-            <button className={styles.secondaryButton}>
+            <button 
+              className={styles.secondaryButton}
+              aria-label="Learn more about exploitingis.FUN"
+            >
               Learn More
             </button>
           </div>
         </div>
 
-        <div className={styles.heroVisual}>
-          <div className={styles.glowOrb}></div>
-          <div className={styles.codeBlock}>
+        <div className={styles.heroVisual} role="img" aria-label="Code example showcase">
+          <div className={styles.glowOrb} aria-hidden="true"></div>
+          <div className={styles.codeBlock} role="code" aria-label="Example Lua script code">
             <div className={styles.codeHeader}>
               <div className={styles.codeDots}>
                 <span></span>
@@ -109,10 +138,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Games Supported Section */}
-      <section className={styles.gamesSection}>
+
+      <section className={styles.gamesSection} aria-labelledby="games-section-title">
         <div className={styles.container}>
-          <h2 className={styles.gamesSectionTitle}>
+          <h2 className={styles.gamesSectionTitle} id="games-section-title">
             Our Arsenal: Now Supporting {games.length} Games
           </h2>
           <p className={styles.gamesSectionSubtitle}>
@@ -120,18 +149,18 @@ export default function Home() {
           </p>
           
           {isMobile ? (
-            <div className={styles.carouselWrapper}>
+            <div className={styles.carouselWrapper} role="region" aria-label="Games carousel">
               <EmblaCarousel slides={gameCards} options={{ loop: true }} />
             </div>
           ) : (
-            <div className={styles.gamesGrid}>
+            <div className={styles.gamesGrid} role="grid" aria-label="Supported games grid">
               {gameCards}
             </div>
           )}
         </div>
       </section>
 
-      {/* Footer */}
+
       <footer className={styles.footer}>
         <div className={styles.container}>
           <p>&copy; 2025 exploitingis.FUN - All rights reserved.</p>
@@ -141,6 +170,7 @@ export default function Home() {
           <p className={styles.educationalNote}>For educational purposes only.</p>
         </div>
       </footer>
-    </main>
+      </main>
+    </>
   )
 } 
