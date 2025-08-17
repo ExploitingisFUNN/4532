@@ -1,0 +1,50 @@
+[
+  {
+    "id": "forsaken",
+    "name": "Forsaken",
+    "image": "/assets/Forsaken.jpg",
+    "status": "operational"
+  },
+  {
+    "id": "basketball-legends",
+    "name": "Basketball Legends",
+    "image": "/assets/BasketballLegends.jpg",
+    "status": "operational"
+  },
+  {
+    "id": "99-nights-forest",
+    "name": "99 Nights in the Forest",
+    "image": "/assets/99nights.jpg",
+    "status": "operational"
+  },
+  {
+    "id": "dig",
+    "name": "Dig",
+    "image": "/assets/Dig.jpg",
+    "status": "operational"
+  },
+  {
+    "id": "ink-game",
+    "name": "Ink Game",
+    "image": "/assets/inkgame.jpg",
+    "status": "operational"
+  },
+  {
+    "id": "grow-a-garden",
+    "name": "Grow a Garden",
+    "image": "/assets/gag.jpg",
+    "status": "operational"
+  },
+  {
+    "id": "build-a-plane",
+    "name": "Build a Plane",
+    "image": "/assets/buildaplane.jpg",
+    "status": "operational"
+  },
+  {
+    "id": "doors",
+    "name": "Doors",
+    "image": "/assets/Doors.jpg",
+    "status": "operational"
+  }
+] 

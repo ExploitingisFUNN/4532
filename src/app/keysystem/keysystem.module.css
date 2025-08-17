@@ -1,0 +1,266 @@
+.main {
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+}
+
+.headerBar {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  color: #ccc;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.accent {
+  color: #f0503d;
+}
+
+.subtitle {
+  color: #ccc;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cardsSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.card {
+  background: rgba(20, 20, 20, 0.7);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.recommended {
+  border: 1px solid #f0503d;
+  box-shadow: 0 0 20px rgba(240, 80, 61, 0.1);
+}
+
+.cardBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #f0503d;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.cardIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f0503d;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  color: #ccc;
+}
+
+.featuresList li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featuresList li::before {
+  content: "⚡";
+  margin-right: 0.5rem;
+  color: #f0503d;
+}
+
+.accentButton {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: #f0503d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-bottom: 1rem;
+}
+
+.accentButton:hover {
+  background: #ff6b59;
+}
+
+.ghostButton {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  color: #f0503d;
+  border: 2px solid #f0503d;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.ghostButton:hover {
+  background: rgba(240, 80, 61, 0.1);
+}
+
+.helperText {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 1.5rem;
+  }
+  
+  .cardsGrid {
+    gap: 1.5rem;
+    max-width: 800px;
+  }
+  
+  .card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  
+  .hero {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    margin-bottom: 0.75rem;
+  }
+  
+  .subtitle {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+  }
+  
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  .cardBadge {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.7rem;
+  }
+  
+  .cardIcon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .accentButton,
+  .ghostButton {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .backLink {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 0.75rem;
+  }
+  
+  .hero {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    padding: 1.25rem;
+    max-width: 100%;
+  }
+  
+  .featuresList {
+    font-size: 0.9rem;
+  }
+  
+  .featuresList li {
+    margin-bottom: 0.5rem;
+  }
+}
