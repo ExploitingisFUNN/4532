@@ -18,12 +18,6 @@
     "status": "operational"
   },
   {
-    "id": "dig",
-    "name": "Dig",
-    "image": "/assets/Dig.jpg",
-    "status": "operational"
-  },
-  {
     "id": "ink-game",
     "name": "Ink Game",
     "image": "/assets/inkgame.jpg",
