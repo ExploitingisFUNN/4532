@@ -40,5 +40,11 @@
     "name": "Doors",
     "image": "/assets/Doors.jpg",
     "status": "operational"
+  },
+  {
+    "id": "protect-the-house-from-monsters",
+    "name": "Protect The House From Monsters",
+    "image": "/assets/PTHFM.jpg",
+    "status": "operational"
   }
 ] 
