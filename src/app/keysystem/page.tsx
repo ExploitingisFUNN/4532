@@ -81,6 +81,46 @@ export default function KeySystemPage(): React.JSX.Element {
                   </a>
                 </div>
               </article>
+
+              <article className={styles.card} role="gridcell" aria-labelledby="rinku-title">
+                <div className={styles.cardContent}>
+                  <h3 className={styles.cardTitle} id="rinku-title">Rinku</h3>
+                  <ul className={styles.featuresList} aria-label="Rinku features">
+                    <li>24 hour access</li>
+                    <li>100% free method</li>
+                    <li>2 Checkpoints</li>
+                  </ul>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.secondaryButton}
+                    aria-label="Get free key via Rinku (external site)"
+                  >
+                    Get Free Key
+                  </a>
+                </div>
+              </article>
+
+              <article className={styles.card} role="gridcell" aria-labelledby="lootlabs-title">
+                <div className={styles.cardContent}>
+                  <h3 className={styles.cardTitle} id="lootlabs-title">LootLabs</h3>
+                  <ul className={styles.featuresList} aria-label="LootLabs features">
+                    <li>24 hour access</li>
+                    <li>100% free method</li>
+                    <li>2 Checkpoints</li>
+                  </ul>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.secondaryButton}
+                    aria-label="Get free key via LootLabs (external site)"
+                  >
+                    Get Free Key
+                  </a>
+                </div>
+              </article>
             </div>
           </div>
         </section>
@@ -98,5 +138,3 @@ export default function KeySystemPage(): React.JSX.Element {
     </>
   )
 }
-
-
