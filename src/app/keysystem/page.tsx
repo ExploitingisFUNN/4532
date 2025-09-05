@@ -108,7 +108,7 @@ export default function KeySystemPage(): React.JSX.Element {
                   <ul className={styles.featuresList} aria-label="LootLabs features">
                     <li>24 hour access</li>
                     <li>100% free method</li>
-                    <li>2 Checkpoints</li>
+                    <li>1 Checkpoint</li>
                   </ul>
                   <a
                     href="#"
