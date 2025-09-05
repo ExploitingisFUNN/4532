@@ -91,7 +91,7 @@ export default function KeySystemPage(): React.JSX.Element {
                     <li>2 Checkpoints</li>
                   </ul>
                   <a
-                    href="#"
+                    href="https://ads.luarmor.net/get_key?for=Rinku-ENEvgwqKmNcx"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.secondaryButton}
@@ -111,7 +111,7 @@ export default function KeySystemPage(): React.JSX.Element {
                     <li>1 Checkpoint</li>
                   </ul>
                   <a
-                    href="#"
+                    href="https://ads.luarmor.net/get_key?for=LootLabs-EmtKVZjpYZUJ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.secondaryButton}
