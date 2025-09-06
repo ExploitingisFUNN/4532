@@ -52,7 +52,7 @@ export default function ResellersPage(): React.JSX.Element {
                     <li>Secure transactions</li>
                   </ul>
                   <a
-                    href="#"
+                    href="https://gckeys.cc/products/exploiting-is-fun/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.primaryButton}
