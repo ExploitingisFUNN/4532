@@ -9,6 +9,7 @@ export default function KeySystemPage(): React.JSX.Element {
           <div className={styles.logo}>exploitingis.FUN</div>
           <div className={styles.navLinks}>
             <a href="/" className={styles.navLink}>Home</a>
+            <a href="/resellers" className={styles.navLink}>Resellers</a>
             <a href="https://discord.gg/ARzg6Mqcxa" target="_blank" rel="noopener noreferrer" className={styles.navLink}>Discord</a>
           </div>
         </div>

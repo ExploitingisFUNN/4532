@@ -71,6 +71,7 @@ export default function Home() {
           <div className={styles.logo}>exploitingis.FUN</div>
           <div className={styles.navLinks}>
             <a href="/keysystem" className={styles.navLink}>Key System</a>
+            <a href="/resellers" className={styles.navLink}>Resellers</a>
             <a href="https://discord.gg/ARzg6Mqcxa" target="_blank" rel="noopener noreferrer" className={styles.navLink}>Discord</a>
           </div>
         </div>
