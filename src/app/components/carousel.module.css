@@ -30,8 +30,8 @@
 
 .embla__button {
   pointer-events: all;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
   width: 30px;
   height: 30px;
@@ -40,6 +40,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.embla__button:hover:not(:disabled) {
+  background-color: #ff6b35;
+  border-color: #ff6b35;
 }
 
 .embla__button:disabled {
