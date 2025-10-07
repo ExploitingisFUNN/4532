@@ -67,6 +67,29 @@ export default function ResellersPage(): React.JSX.Element {
                   <p className={styles.helperText} aria-label="Additional GCKeys information">Trusted partner • Verified seller</p>
                 </div>
               </article>
+
+              <article className={styles.card} role="gridcell" aria-labelledby="floodline-title">
+                <div className={styles.cardIcon} aria-hidden="true">🔑</div>
+                <div className={styles.cardContent}>
+                  <h3 className={styles.cardTitle} id="floodline-title">Floodline</h3>
+                  <ul className={styles.featuresList} aria-label="Floodline features">
+                    <li>Reliable service</li>
+                    <li>Secure payments</li>
+                    <li>Fast delivery</li>
+                    <li>Verified reseller</li>
+                  </ul>
+                  <a
+                    href="https://floodline.mysellauth.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.primaryButton}
+                    aria-label="Visit Floodline store"
+                  >
+                    Visit Floodline
+                  </a>
+                  <p className={styles.helperText} aria-label="Additional Floodline information">Trusted partner • Verified seller</p>
+                </div>
+              </article>
             </div>
           </div>
         </section>
