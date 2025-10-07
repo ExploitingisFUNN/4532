@@ -44,8 +44,7 @@ export default function ResellersPage(): React.JSX.Element {
             </p>
             
             <div className={styles.cardsGrid} role="grid" aria-label="Authorized resellers">
-              <article className={`${styles.card} ${styles.featured}`} role="gridcell" aria-labelledby="gckeys-title">
-                <div className={styles.cardBadge} aria-label="Featured reseller">FEATURED</div>
+              <article className={styles.card} role="gridcell" aria-labelledby="gckeys-title">
                 <div className={styles.cardIcon} aria-hidden="true">🔑</div>
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle} id="gckeys-title">GCKeys</h3>
@@ -79,7 +78,7 @@ export default function ResellersPage(): React.JSX.Element {
                     <li>Verified reseller</li>
                   </ul>
                   <a
-                    href="https://floodline.mysellauth.com/"
+                    href="https://floodline.mysellauth.com/product/exploitingisfun"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.primaryButton}

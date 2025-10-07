@@ -190,12 +190,13 @@
 }
 
 .cardsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: row;
   gap: 2rem;
-  max-width: 500px;
+  max-width: 1000px;
   margin: 0 auto;
-  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
