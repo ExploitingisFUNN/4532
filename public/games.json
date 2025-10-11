@@ -18,10 +18,16 @@
     "status": "operational"
   },
   {
+    "id": "dig",
+    "name": "Dig",
+    "image": "/assets/Dig.jpg",
+    "status": "operational"
+  },
+  {
     "id": "ink-game",
     "name": "Ink Game",
     "image": "/assets/inkgame.jpg",
-    "status": "operational"
+    "status": "patched"
   },
   {
     "id": "grow-a-garden",
@@ -42,9 +48,9 @@
     "status": "operational"
   },
   {
-    "id": "protect-the-house-from-monsters",
-    "name": "Protect The House From Monsters",
-    "image": "/assets/PTHFM.jpg",
+    "id": "plants-vs-brainrots",
+    "name": "Plants vs Brainrot",
+    "image": "/assets/pvb.jpg",
     "status": "operational"
   }
 ] 
