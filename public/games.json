@@ -52,5 +52,29 @@
     "name": "Plants vs Brainrot",
     "image": "/assets/pvb.jpg",
     "status": "operational"
+  },
+  {
+    "id": "the-forge",
+    "name": "The Forge",
+    "image": "/assets/TheForge.png",
+    "status": "operational"
+  },
+  {
+    "id": "fish-it",
+    "name": "Fish It",
+    "image": "/assets/FishIt.png",
+    "status": "operational"
+  },
+  {
+    "id": "raise-animals",
+    "name": "Raise Animals",
+    "image": "/assets/RaiseAnimals.png",
+    "status": "operational"
+  },
+  {
+    "id": "msvd",
+    "name": "Murderers Vs. Sheriffs DUELS",
+    "image": "/assets/MSVD.png",
+    "status": "operational"
   }
-] 
+]
