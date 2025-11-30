@@ -34,6 +34,43 @@ export default function ResellersPage(): React.JSX.Element {
           </div>
         </section>
 
+        <section className={styles.pricingSection} aria-labelledby="pricing-title">
+          <div className={styles.container}>
+            <h2 className={styles.cardsSectionTitle} id="pricing-title">
+              Pricing Plans
+            </h2>
+            <p className={styles.cardsSectionSubtitle}>
+              Choose the plan that best fits your needs.
+            </p>
+            
+            <div className={styles.pricingGrid}>
+              <article className={styles.pricingCard}>
+                <div className={styles.pricingCardContent}>
+                  <h3 className={styles.pricingTitle}>Weekly</h3>
+                  <div className={styles.pricingPrice}>$3.99</div>
+                  <span className={styles.pricingPeriod}>per week</span>
+                </div>
+              </article>
+              
+              <article className={styles.pricingCard}>
+                <div className={styles.pricingCardContent}>
+                  <h3 className={styles.pricingTitle}>Monthly</h3>
+                  <div className={styles.pricingPrice}>$5.99</div>
+                  <span className={styles.pricingPeriod}>per month</span>
+                </div>
+              </article>
+              
+              <article className={styles.pricingCard}>
+                <div className={styles.pricingCardContent}>
+                  <h3 className={styles.pricingTitle}>Quarterly</h3>
+                  <div className={styles.pricingPrice}>$9.99</div>
+                  <span className={styles.pricingPeriod}>per 3 months</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section className={styles.cardsSection} aria-labelledby="resellers-title">
           <div className={styles.container}>
             <h2 className={styles.cardsSectionTitle} id="resellers-title">
