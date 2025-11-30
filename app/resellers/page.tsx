@@ -92,7 +92,7 @@ export default function ResellersPage(): React.JSX.Element {
                     <li>Verified reseller</li>
                   </ul>
                   <a
-                    href="https://floodline.mysellauth.com/product/exploitingisfun"
+                    href="https://floodline.store/product/exploitingisfun"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.primaryButton}
