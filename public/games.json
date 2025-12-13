@@ -76,5 +76,11 @@
     "name": "Murderers Vs. Sheriffs DUELS",
     "image": "/assets/MSVD.png",
     "status": "operational"
+  },
+  {
+    "id": "terminal-13",
+    "name": "Terminal 13",
+    "image": "/assets/Terminal13.png",
+    "status": "operational"
   }
 ]
